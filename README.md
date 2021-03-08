@@ -9,6 +9,12 @@ More information is available in docstrings:
 >>> help(jwrap)
 ```
 
+## Installation
+
+```
+pip install jwrap
+```
+
 ## Quickstart
 
 For example, you can write some data to json file by this:
@@ -17,7 +23,7 @@ For example, you can write some data to json file by this:
 from jwrap import Jwrap
 
 j = Jwrap('myfile.json')
-j.json['mykey'] = 'my value'
-# or: j.ins('mykey', 'my value')
+j.json()['mykey'] = 'my value'
+# or j.ins('mykey', 'my value')
 j.commit()  # write data to file
 ```
